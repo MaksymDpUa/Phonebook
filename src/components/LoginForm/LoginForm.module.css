@@ -1,0 +1,12 @@
+.form {
+  width: 320px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.submitBtn:hover {
+  background-color: rgb(20, 89, 238);
+}

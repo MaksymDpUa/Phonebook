@@ -1,0 +1,37 @@
+.container {
+  padding: 0px 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px black solid;
+  height: 28px;
+}
+
+.authorization {
+  display: flex;
+  gap: 36px;
+}
+
+.forLoggeded {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.navText {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+
+.navText:hover {
+  color: rgb(20, 89, 238);
+}
+
+.btn:hover {
+  background-color: rgb(20, 89, 238);
+}
