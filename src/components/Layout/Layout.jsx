@@ -26,8 +26,12 @@ export const Layout = ({ children }) => {
               <NavLink to="/contacts" className={css.navText}>
                 Contacts
               </NavLink>
-              <p>Hello, {userName} </p>
-              <button type="button" onClick={handleLogOut}>
+              <p className={css.userName}>Hello, {userName} </p>
+              <button
+                type="button"
+                onClick={handleLogOut}
+                className={css.btnLogout}
+              >
                 LogOut
               </button>
             </div>

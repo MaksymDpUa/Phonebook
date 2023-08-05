@@ -35,3 +35,12 @@
 .btn:hover {
   background-color: rgb(20, 89, 238);
 }
+
+.userName {
+  font-size: large;
+  font-weight: 400;
+}
+
+.btnLogout:hover {
+  background-color: rgb(238, 20, 20);
+}
