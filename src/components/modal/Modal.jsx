@@ -20,7 +20,6 @@ export const Modal = ({ closeModal, initialName, initialNumber, id }) => {
 
   return (
     <div className={css.overlay} onClick={handleOverlayClick}>
-      {/* <div className={css.modal}> */}
       <FormUpdate
         textBtn="Update contact"
         className={css.modal}
@@ -28,8 +27,7 @@ export const Modal = ({ closeModal, initialName, initialNumber, id }) => {
         initialNumber={initialNumber}
         closeModal={closeModal}
         id={id}
-      />
-      {/* </div> */}
+      /> 
     </div>
   );
 };
