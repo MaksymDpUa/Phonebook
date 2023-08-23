@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from './Modal.module.css';
 import { FormUpdate } from 'components/Forms/FormUpdate';
 
-export const Modal = ({ closeModal, initialName, initialNumber, id }) => {
+const Modal = ({ closeModal, initialName, initialNumber, id }) => {
   useEffect(() => {
     const handlePressEsc = e => {
       if (e.key === 'Escape') closeModal();
@@ -27,7 +27,7 @@ export const Modal = ({ closeModal, initialName, initialNumber, id }) => {
         initialNumber={initialNumber}
         closeModal={closeModal}
         id={id}
-      /> 
+      />
     </div>
   );
 };
@@ -37,3 +37,5 @@ Modal.propTypes = {
   closeModal: PropTypes.func,
   largeImage: PropTypes.string,
 };
+
+export default Modal;
