@@ -21,18 +21,21 @@ export const ContactListItem = ({ name, number, id, deletingContactId }) => {
       <p className={css.contactInfo}>
         <span className={css.contactName}>{name}</span>: {number}
       </p>
-      <div className={css.buttonBlock}>   <button type="button" className={css.updateBtn} onClick={openModal}>
-        Update
-      </button>
-      <button
-        disabled={deletingContactId === id}
-        type="button"
-        className={css.deleteBtn}
-        onClick={() => dispatch(deleteContact(id))}
-      >
-        Delete
-      </button></div>
-   
+      <div className={css.buttonBlock}>
+        {' '}
+        <button type="button" className={css.updateBtn} onClick={openModal}>
+          Update
+        </button>
+        <button
+          disabled={deletingContactId === id}
+          type="button"
+          className={css.deleteBtn}
+          onClick={() => dispatch(deleteContact(id))}
+        >
+          Delete
+        </button>
+      </div>
+
       {showModal && (
         <Modal
           closeModal={closeModal}
