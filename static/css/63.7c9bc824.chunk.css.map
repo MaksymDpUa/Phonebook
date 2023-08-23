@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/63.7c9bc824.chunk.css","mappings":"AAAA,gCACE,iBACF,CAEA,iCACE,cAAe,CACf,eACF","sources":["components/Sections/HomePageSection/HomePageSection.module.css"],"sourcesContent":[".section {\n  text-align: center;\n}\n\n.userName {\n  font-size: 28px;\n  font-weight: 600;\n}\n"],"names":[],"sourceRoot":""}
