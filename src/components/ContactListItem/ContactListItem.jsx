@@ -1,4 +1,4 @@
-import Modal from 'components/Modal/Modal';
+import Modal from 'components/modal/Modal';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
