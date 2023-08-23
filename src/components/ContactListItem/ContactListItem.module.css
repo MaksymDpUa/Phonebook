@@ -1,3 +1,9 @@
+.contactsItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .contactInfo {
   display: inline-block;
   margin: 0px 12px 12px 0px;
@@ -8,6 +14,7 @@
 }
 .updateBtn {
   cursor: pointer;
+  margin-right: 8px;
 }
 .updateBtn:hover {
   background-color: rgb(20, 89, 238);

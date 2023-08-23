@@ -1,8 +1,8 @@
 .form {
   width: 300px;
-  height: 140px;
+  height: 130px;
   border: 2px solid black;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: beige;
 }
 
@@ -13,6 +13,7 @@
 .inputField {
   display: block;
   border: 1px solid black;
+  width: 100%;
   margin-bottom: 16px;
   outline: none;
 }
@@ -24,7 +25,8 @@
 
 .submitBtn {
   display: block;
-
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   cursor: pointer;
 }

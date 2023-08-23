@@ -1,7 +1,14 @@
+.container {
+  border: 2px solid black;
+  padding: 10px 20px;
+  background-color: beige;
+}
+
 .inputFilter {
   display: block;
   border: 1px solid black;
   outline: none;
+  width: 100%;
 }
 
 .inputFilter:hover,

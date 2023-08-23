@@ -1,5 +1,10 @@
 .form {
   width: 320px;
+    border: 1px solid black;
+  padding: 12px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
 }
 
 .label {
@@ -8,6 +13,22 @@
   margin-bottom: 16px;
 }
 
+.inputField {
+  display: block;
+  border: 1px solid black;
+  outline: none;
+}
+
+.inputField:hover,
+.inputField:focus {
+  border-color: rgb(20, 89, 238);
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .submitBtn:hover {
   background-color: rgb(20, 89, 238);
 }

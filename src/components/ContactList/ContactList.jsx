@@ -14,6 +14,8 @@ import { getFilter } from 'redux/filterSlice';
 import { fetchContacts } from 'redux/operations';
 import { useAuth } from 'hooks/useAuth';
 
+import css from './ContactList.module.css'
+
 export const ContactList = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
@@ -36,7 +38,7 @@ export const ContactList = () => {
   const visibleContacts = getVisibleContacts();
 
   return (
-    <ul>
+    <ul className={css.list}>
       {isLoading && <div>Is loading...</div>}
       {error && <div>Something go wrong:( Please, try letter</div>}
       {visibleContacts?.map(contact => {

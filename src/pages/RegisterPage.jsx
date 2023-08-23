@@ -1,12 +1,7 @@
-import { RegisterForm } from "components/RegisterForm/RegisterForm"
+import RegisterSection from 'components/Sections/RegiserSection/RegisterSection';
 
 const RegisterPage = () => {
-  return (
-    <>
-     <h1>Please, create your account</h1> 
-      <RegisterForm></RegisterForm>
-    </>
-  );
+  return <RegisterSection />;
 };
 
-export default RegisterPage
+export default RegisterPage;

@@ -12,7 +12,7 @@ export const Filter = () => {
   const change = e => dispatch(changeFilter(e.target.value));
 
   return (
-    <>
+    <div className={css.container}>
       <label htmlFor={inputFilterId} className={css.lableFilter}>
         Find your contact
       </label>
@@ -23,7 +23,7 @@ export const Filter = () => {
         onChange={change}
         id={inputFilterId}
       ></input>
-    </>
+    </div>
   );
 };
 

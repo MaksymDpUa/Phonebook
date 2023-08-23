@@ -1,5 +1,5 @@
 import { useAuth } from 'hooks/useAuth';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { logOut } from 'redux/auth/operations';
 import css from './Layout.module.css';
@@ -10,7 +10,9 @@ export const Layout = ({ children }) => {
     dispatch(logOut());
   };
 
-  const userName = useSelector(state => state.auth.user.name);
+  const {
+    user: { name },
+  } = useAuth();
 
   const { isLoggedIn } = useAuth();
 
@@ -21,12 +23,19 @@ export const Layout = ({ children }) => {
           <NavLink to="/" className={css.navText}>
             Home Page
           </NavLink>
+          {isLoggedIn && (
+            <NavLink to="/contacts" className={css.navText}>
+              Contacts
+            </NavLink>
+          )}
           {isLoggedIn ? (
             <div className={css.forLoggeded}>
-              <NavLink to="/contacts" className={css.navText}>
+              {/* <NavLink to="/contacts" className={css.navText}>
                 Contacts
-              </NavLink>
-              <p className={css.userName}>Hello, {userName} </p>
+              </NavLink> */}
+              <p className={css.greating}>
+                Hello, <span className={css.userName}>{name}</span>!{' '}
+              </p>
               <button
                 type="button"
                 onClick={handleLogOut}

@@ -1,5 +1,7 @@
+import HomePageSection from 'components/Sections/HomePageSection/HomePageSection';
+
 const HomePage = () => {
-  return <h1>Welcome, to my App</h1>;
+  return <HomePageSection />;
 };
 
-export default HomePage
+export default HomePage;

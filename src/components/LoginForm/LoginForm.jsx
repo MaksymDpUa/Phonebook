@@ -44,12 +44,16 @@ export const LoginForm = () => {
     >
       <label className={css.label}>
         Email
-        <input type="email" {...register('email')} />
+        <input type="email" className={css.inputField} {...register('email')} />
         {errors.email && <p>{errors.email?.message}</p>}
       </label>
       <label className={css.label}>
         Password
-        <input type="password" {...register('password')} />
+        <input
+          type="password"
+          className={css.inputField}
+          {...register('password')}
+        />
         {errors.password && <p>{errors.password?.message}</p>}
       </label>
       <button type="submit" className={css.submitBtn}>

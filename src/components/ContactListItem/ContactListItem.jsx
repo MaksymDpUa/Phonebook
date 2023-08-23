@@ -1,4 +1,4 @@
-import { Modal } from 'components/modal/Modal';
+import { Modal } from 'components/Modal/Modal';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -17,11 +17,11 @@ export const ContactListItem = ({ name, number, id, deletingContactId }) => {
   };
 
   return (
-    <li>
+    <li className={css.contactsItem}>
       <p className={css.contactInfo}>
         <span className={css.contactName}>{name}</span>: {number}
       </p>
-      <button type="button" className={css.updateBtn} onClick={openModal}>
+      <div className={css.buttonBlock}>   <button type="button" className={css.updateBtn} onClick={openModal}>
         Update
       </button>
       <button
@@ -31,7 +31,8 @@ export const ContactListItem = ({ name, number, id, deletingContactId }) => {
         onClick={() => dispatch(deleteContact(id))}
       >
         Delete
-      </button>
+      </button></div>
+   
       {showModal && (
         <Modal
           closeModal={closeModal}

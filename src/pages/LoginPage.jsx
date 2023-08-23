@@ -1,12 +1,7 @@
-import { LoginForm } from 'components/LoginForm/LoginForm';
+import LogInSection from 'components/Sections/LogInSection/LogInSection';
 
- const LogInPage = () => {
-  return (
-    <>
-      <h1>Please, login into your accaunt</h1>
-      <LoginForm />
-    </>
-  );
+const LogInPage = () => {
+  return <LogInSection />;
 };
 
-export default LogInPage
+export default LogInPage;

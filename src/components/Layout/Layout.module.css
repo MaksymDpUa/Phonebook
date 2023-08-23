@@ -36,9 +36,14 @@
   background-color: rgb(20, 89, 238);
 }
 
+.greating {
+  font-size: large;
+  font-weight: 500;
+}
+
 .userName {
   font-size: large;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .btnLogout:hover {
