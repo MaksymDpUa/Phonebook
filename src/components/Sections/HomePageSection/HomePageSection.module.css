@@ -1,5 +1,12 @@
 .section {
+  height: 100vh;
   text-align: center;
+  background-color: beige;
+  background-image: URL('../../../../assets/home_page_bg_S.jpg');
+  /* background-image: URL('../../../../assets/desk.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .userName {

@@ -17,7 +17,8 @@ export const Layout = ({ children }) => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <div className={css.container}>
+    // <div className={css.container}>
+    <>
       <header>
         <nav className={css.nav}>
           <NavLink to="/" className={css.navText}>
@@ -58,6 +59,7 @@ export const Layout = ({ children }) => {
       </header>
       <main>{children}</main>
       <footer></footer>
-    </div>
+    </>
+    // </div>
   );
 };
