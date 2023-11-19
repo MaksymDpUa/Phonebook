@@ -9,6 +9,13 @@
   background-position: center;
 }
 
+.mainTitle {
+  display: inline;
+  margin-top: 0;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+}
+
 .userName {
   font-size: 28px;
   font-weight: 600;

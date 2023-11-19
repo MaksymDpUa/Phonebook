@@ -19,7 +19,7 @@ export const Layout = ({ children }) => {
   return (
     // <div className={css.container}>
     <>
-      <header>
+      <header className={css.headerContainer}>
         <nav className={css.nav}>
           <NavLink to="/" className={css.navText}>
             Home Page

@@ -1,5 +1,6 @@
 import { useAuth } from 'hooks/useAuth';
 import css from './HomePageSection.module.css';
+import { HomeSection, MainTitle } from './HomePageSection.styled';
 
 const HomePageSection = () => {
   const {
@@ -8,8 +9,8 @@ const HomePageSection = () => {
   } = useAuth();
 
   return (
-    <section className={css.section}>
-      <h1>Welcome, to your Phonebook!</h1>
+    <HomeSection>
+      <MainTitle>Welcome, to your Phonebook!</MainTitle>
       {isLoggedIn ? (
         <p>
           Glad to see you, <span className={css.userName}>{name}</span> !{' '}
@@ -17,7 +18,7 @@ const HomePageSection = () => {
       ) : (
         <p>Please, log in or register to start</p>
       )}
-    </section>
+    </HomeSection>
   );
 };
 
