@@ -1,3 +1,4 @@
+import { HeaderMobile } from 'components/Header/HeaderMobile/HeaderMobile';
 import { useAuth } from 'hooks/useAuth';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
@@ -20,6 +21,7 @@ export const Layout = ({ children }) => {
     // <div className={css.container}>
     <>
       <header className={css.headerContainer}>
+        <HeaderMobile />
         <nav className={css.nav}>
           <NavLink to="/" className={css.navText}>
             Home Page
